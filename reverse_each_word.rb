@@ -4,9 +4,9 @@ def reverse_each_word(string)
   first_array = string.split.each { |s| } # splits each word individually into an array.
   reversed_array = first_array.reverse # reverses the order of the array.
   joined_string = reversed_array.join(" ") # joins the reversed array into a string
-  final_string = joined_string.split('') # turns the string  back into an array using the split method
+  final_string = joined_string.split('') # turns the string back into an array using the split method
 
-  final_string.each do |char|
+  final_string.collect do |char|
     empty_array.unshift(char)
   end
 
