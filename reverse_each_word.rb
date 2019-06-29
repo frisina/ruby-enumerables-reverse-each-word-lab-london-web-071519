@@ -9,7 +9,7 @@ def reverse_each_word(string)
 
   first_reversal = reversed_string.join('')
 
-  first_reversal do |char|
+  first_reversal.each do |char|
     final_reverse.unshift(char)
   end
 
