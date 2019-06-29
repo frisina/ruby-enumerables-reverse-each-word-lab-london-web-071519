@@ -1,12 +1,22 @@
 def reverse_each_word(string)
-  reversed_string = []
+  empty_array = [] #empty array.
 
-  first_array = string.split.each { |s| }
+  first_array = string.split.each { |s| } # splits each word individually into an array.
+  reversed_array = first_array.reverse # reverses the order of the array.
+  joined_string = reversed_array.join(" ") #joins the reversed array into a string
 
-  first_array.each do |char|
-    reversed_string.unshift(char)
+  joined_string.each do |char|
+    empty_array.unshift(char)
   end
-  return reversed_string
+
+  return empty_array.join('')
+end
+
+
+  #reversed_array.each do |char|
+  #  reversed_array.unshift(char)
+  #end
+  #return reversed_string
 
   #string = string.split('')
   #reversed_string = []
@@ -20,6 +30,3 @@ def reverse_each_word(string)
 
 
   #return
-
-
-end
